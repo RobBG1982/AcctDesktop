@@ -1,0 +1,126 @@
+{
+"account_id": "acct_11111111111",
+"account_type": "CHECKING",
+"status": "active",
+"currency": "USD",
+"balance": {
+"available": 2450.75,
+"current": 2500.0
+},
+"institution": {
+"name": "Community Bank",
+"routing_number": "123456789"
+},
+"holder": {
+"first_name": "Jane",
+"last_name": "Doe",
+"email": "jane.doe@example.com"
+},
+"transactions": [
+{
+"Type": "debit",
+"Date": "10/1/2010",
+"Vendor": "Warszawa",
+"Amount": 16.0,
+"Notes": "none"
+},
+{
+"Type": "debit",
+"Date": "10/2/2010",
+"Vendor": "Dave and Busters",
+"Amount": 24.00,
+"Notes": "none"
+},
+{
+"Type": "debit",
+"Date": "1/16/2015",
+"Vendor": "Astro Cafe (lunch)",
+"Amount": 6.65,
+"Notes": "none"
+},
+{
+"Type": "debit",
+"Date": "7/5/2026",
+"Vendor": "William's Party Store",
+"Amount": 12.25,
+"Notes": "none"
+},
+{
+"Type": "debit",
+"Date": "7/6/2026",
+"Vendor": "Zelle",
+"Amount": 700.0,
+"Notes": "none"
+},
+{
+"Type": "credit",
+"Date": "9/20/2010",
+"Vendor": "Opening Balance",
+"Amount": 100.0,
+"Notes": "none"
+},
+{
+"Type": "credit",
+"Date": "7/31/2026",
+"Vendor": "Employer",
+"Amount": 1900.01,
+"Notes": "none"
+},
+{
+"Type": "credit",
+"Date": "08/07/2026",
+"Vendor": "Employer",
+"Amount": 1900.01,
+"Notes": "none"
+}
+]
+},
+{
+  "account_id": "acct_2222222222",
+  "account_type": "CHECKING",
+  "status": "active",
+  "currency": "USD",
+  "balance": {
+    "available": 2450.75,
+    "current": 2500.00
+  },
+  "institution": {
+    "name": "Community Bank",
+    "routing_number": "987654321"
+  },
+  "holder": {
+    "first_name": "adam",
+    "last_name": "jane",
+    "email": "adam.jane@example.com"
+  },
+  "transactions": [
+ {
+   "Type": "debit",
+   "Date": "7/6/2026",
+   "Vendor": "Bar tab",
+   "Amount": 637.81,
+   "Notes": "none"
+ },
+ {
+   "Type": "credit",
+   "Date": "9/20/2010",
+   "Vendor": "Opening Balance (ATM from Chck3589)",
+   "Amount": 100.00,
+   "Notes": "none"
+ },
+ {
+   "Type": "credit",
+   "Date": "7/31/2026",
+   "Vendor": "InSight Global",
+   "Amount": 1900.01,
+   "Notes": "none"
+ },
+ {
+   "Type": "credit",
+   "Date": "8/20/2026",
+   "Vendor": "Fake trans",
+   "Amount": 00.05,
+   "Notes": "none"
+ }
+]
+}

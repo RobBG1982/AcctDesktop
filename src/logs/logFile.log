@@ -1,0 +1,9 @@
+2023-12-29 14:01:20,127  INFO   displayValues __init__ Initializing database
+2023-12-29 14:01:20,129  INFO   gasMain BasicApp Starting MPG Desktop Aplication
+2023-12-29 14:01:20,654  INFO   gasMain update_display Updating Display values
+2023-12-29 14:01:20,654  DEBUG  displayValues set_all_values Setting all values
+2023-12-29 14:01:20,654  INFO   displayValues set_overall_values Setting 'overall' values
+2023-12-29 14:01:20,655  INFO   displayValues set_recent_values Setting 'recent' values
+2023-12-29 14:01:20,655  INFO   displayValues set_estimated_values Setting 'estimated' values
+2023-12-29 14:01:20,655  DEBUG  displayValues set_estimated_values Completed Estimated values, Range: 369.45500000000027 Current Mileage: 94401.8 Next Estimated Fill UP: 94771.255
+2023-12-29 14:01:20,655  INFO   gasMain update_display Finished Estimated Values display

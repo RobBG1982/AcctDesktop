@@ -1,0 +1,307 @@
+#:kivy 2.1.0
+#:import colors utilities.cmn_values.Common_Colors
+#:import cmn_str utilities.cmn_values.Common_Strings
+<SummaryWindow>
+    name: "summary"
+
+	acctName: acctName
+	acctBalance: acctBalance
+
+	overall_mileage: overall_mileage
+	overall_mpg: overall_mpg
+	overall_cpm: overall_cpm
+	overall_cpg: overall_cpg
+
+	recent_mileage: recent_mileage
+	recent_mpg: recent_mpg
+	recent_cpm: recent_cpm
+	recent_cpg: recent_cpg
+
+	new_date: new_date
+	new_type: new_type
+	new_vendor: new_vendor
+	new_amount: new_amount
+
+	
+	new_entry_button:  new_entry_button
+	update_button: update_button 
+
+	canvas.before:
+	    Color: 
+            rgba: colors.gray_bg
+	    Rectangle:
+		    pos: self.pos
+		    size: self.size	
+     
+	BoxLayout:
+		orientation:'vertical' 
+    	color: 
+
+        # --- App Title --- #   
+		Label:
+			text: cmn_str.label_title
+			font_size: 36
+			color: colors.pink_title
+            background_normal: ""
+			bold: "True"
+
+
+        # -------------------------------
+		#  Account Info
+		# ------------------------------ 
+
+		BoxLayout:
+			orientation:'horizontal' 
+            pos_hint: {'right': 1}
+
+			Label:
+				text: cmn_str.label_acctName
+				color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+				size_hint_x: None
+				size: self.texture_size
+				pos_hint: {'right': 0.9}
+
+			Label:
+				id: est_range
+				text: cmn_str.label_num_ex4
+				color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+			Label:
+				text: cmn_str.label_est_mileage
+				color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+				size_hint_x: None
+				size: self.texture_size
+				pos_hint: {'right': 0.9}
+
+			Label:
+				id: est_mileage
+				text: cmn_str.label_num_ex4
+				color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+
+        # -------------------------------
+		#  Recent MPG Labels and Values  
+		# ------------------------------ 
+
+		Label:
+			text: cmn_str.label_recent
+			font_size: 24
+			color: colors.black
+			bold: "True"
+            size_hint_x: None
+            size: self.texture_size
+            pos_hint: {'right': 0.3}
+
+
+		BoxLayout:
+			orientation:'horizontal' 
+            pos_hint: {'right': 1}
+
+
+			Label:
+				text: cmn_str.label_miles
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+
+			Label:
+				text: cmn_str.label_mpg
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+
+			Label:
+				text: cmn_str.label_cpm
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+
+			Label:
+				text: cmn_str.label_cpg
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+
+			
+		BoxLayout:
+			orientation:'horizontal' 
+            pos_hint: {'right': 1}
+
+			Label:
+			    id: recent_mileage
+				text: cmn_str.label_num_ex4
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+			Label:
+			    id: recent_mpg
+				text: cmn_str.label_num_ex3
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+			Label:
+			    id: recent_cpm
+				text: cmn_str.label_num_ex3
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+			Label:
+			    id: recent_cpg
+				text: cmn_str.label_num_ex3
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+
+   
+        # -------------------------------
+		#  Overall MPG Labels and Values  
+		# ------------------------------ 
+
+		Label:
+			text: cmn_str.label_overall
+			font_size: 24
+			color: colors.black
+			bold: "True"
+            size_hint_x: None
+            size: self.texture_size
+            pos_hint: {'right': 0.3}
+			
+
+
+		BoxLayout:
+			orientation:'horizontal' 
+            pos_hint: {'right': 1}
+
+			Label:
+				text: cmn_str.label_miles
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) /15**4
+
+			Label:
+				text: cmn_str.label_mpg
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) /15**4
+
+			Label:
+				text: cmn_str.label_cpm
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) /15**4
+
+			Label:
+				text: cmn_str.label_cpg
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+
+
+		BoxLayout:
+			orientation:'horizontal' 
+            pos_hint: {'right': 1}
+
+			Label:
+			    id: overall_mileage
+				text: cmn_str.label_num_ex4
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+			Label:
+			    id: overall_mpg
+				text: cmn_str.label_num_ex3
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+			Label:
+			    id: overall_cpm
+				text: cmn_str.label_num_ex3
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+			Label:
+			    id: overall_cpg
+				text: cmn_str.label_num_ex3
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+				bold: "True"
+
+		 
+        # -------------------------------
+		#  New Entry   
+		# ------------------------------ 
+
+			
+		GridLayout:
+			cols: 4
+			rows: 2 
+            pos_hint: {'right': 1}
+			padding: 0, 5, 20, 0
+
+			Label:
+				text: cmn_str.label_transDate
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+
+			TextInput:
+			    id: new_date
+				text: cmn_str.label_Date_Example
+
+			Label:
+				text: cmn_str.label_transVendor
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+
+			TextInput:
+			    id: transVendor
+				text: cmn_str.label_Vendor_Example
+			    color: colors.black
+
+			Label:
+				text: cmn_str.label_gallons_entry
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+
+			TextInput:
+			    id: new_gallons
+				text: cmn_str.label_Amount_Example
+			    color: colors.black
+
+			Label:
+				text: cmn_str.label_Type_Entry
+			    color: colors.black
+				font_size: (root.width**2 + root.height**2) / 15**4
+
+			TextInput:
+			    id: new_entry
+				text: cmn_str.label_Type_Example
+			    color: colors.black
+
+		FloatLayout:
+			orientation:'horizontal' 
+            pos_hint: {'right': 1}
+			padding: 0, 100, 20, 0
+
+			Button:
+			    id: new_entry_button
+				on_press: root.add_new_entry()
+				text: cmn_str.btn_new_entry_text
+				size_hint: (0.2, 0.7)
+                pos_hint: {'x':.3, 'y':.1}
+				background_color: colors.blue_btn
+
+			Button:
+			    id: update_button
+				on_press: root.update_values()
+				text: cmn_str.btn_update_text
+				size_hint: (0.2, 0.7)
+                pos_hint: {'x':.6, 'y':.1}
+				background_color: colors.blue_btn
+	
